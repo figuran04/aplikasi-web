@@ -87,6 +87,7 @@ def create_post_image(post_data, index):
 if __name__ == "__main__":
     posts = [
         ("https://medium.com/@dikaelsaputra/flowchart-sistem-e-commerce-sederhana-b26ceae5117f?source=rss-272e0aace4a6------2", 'pertemuan-1/README.md'),
+        ("https://medium.com/@dikaelsaputra/ui-ux-sistem-e-commerce-sederhana-676d5b3c8e71?source=rss-272e0aace4a6------2", 'pertemuan-3/README.md')
         ]
     
     for post_link, readme_path in posts:
