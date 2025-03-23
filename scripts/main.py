@@ -58,7 +58,7 @@ def update_readme(posts):
 
     for title, link, image_url, summary in posts:
         new_content += '  <tr>\n'
-        new_content += f'    <td style="border: 1px solid white; padding: 10px;"><h3><a href="{link}" target="_blank" style="color: white; text-decoration: none;">{escape(title)}</a></h3><p>{escape(summary)}</p></td>\n'
+        new_content += f'    <td style="border: 1px solid white; padding: 10px;"><h3><a href="{link}" target="_blank" style="text-decoration: none;">{escape(title)}</a></h3><p>{escape(summary)}</p></td>\n'
         new_content += f'    <td style="border: 1px solid white; padding: 10px;"><img src="{image_url}" alt="Post Image" style="width: 100px; height: auto;" /></td>\n'
         new_content += '  </tr>\n'
 
