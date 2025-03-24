@@ -1,25 +1,16 @@
-<header class="bg-emerald-100 py-4 px-8 flex justify-between items-center sticky top-0 shadow gap-8">
-  <ul class="flex gap-8 items-center">
-    <li>
-      <h1 class="text-xl font-bold"><a href="../home">Zerovaa</a></h1>
-    </li>
-    <li>
-      <a href="../categories">Kategori</a>
-    </li>
-  </ul>
+<!DOCTYPE html>
+<html lang="en">
 
-  <input type="text" placeholder="Cari produk..." class="w-full max-w-xs py-2 px-4 bg-gray-100 rounded-full outline-emerald-200">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><?php echo isset($pageTitle) ? $pageTitle . " | Zerovaa" : "Zerovaa"; ?></title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+</head>
 
-  <nav>
-    <ul class="flex gap-8 items-center flex-nowrap">
-      <?php if (isset($_SESSION['user_id'])) : ?>
-        <li><a href="../../controllers/orders/fetch_orders.php">Riwayat Order</a></li>
-        <li><a href="../cart">Keranjang</a></li>
-        <li><a href="../profile">Profil</a></li>
-      <?php else : ?>
-        <li><a href="../login">Masuk</a></li>
-        <li><a href="../register">Daftar</a></li>
-      <?php endif; ?>
-    </ul>
-  </nav>
-</header>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <main class="container mx-auto p-6">
