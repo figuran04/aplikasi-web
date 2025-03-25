@@ -50,7 +50,7 @@ def update_readme(posts):
     # Prepare new content
     new_content = '\n'
     new_content += '<div style="overflow-x:auto;">\n'
-    new_content += '<table style="width: 100%; border-collapse: collapse; color: white;">\n'
+    new_content += '<table style="width: 100%; border-collapse: collapse;">\n'
     new_content += '  <tr>\n'
     new_content += f'    <th style="border: 1px solid white; padding: 10px;">Summary</th>\n'
     new_content += f'    <th style="border: 1px solid white; padding: 10px;">Thumbnail</th>\n'
